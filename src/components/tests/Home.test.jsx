@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Home from '../Home.jsx';
 
-describe('Home component', () => {
+describe('Home component:', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(<Home />);
