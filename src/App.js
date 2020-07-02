@@ -7,10 +7,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Link to="/" class="home-btn">
+        <Link to="/" className="home-btn">
           Home
         </Link>
-        <Link to="/add" class="add-post-btn">
+        <Link to="/add" className="add-post-btn">
           Add Post
         </Link>
 
