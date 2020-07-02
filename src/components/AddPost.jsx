@@ -12,6 +12,7 @@ function AddPost() {
           className="input"
           placeholder="Your message..."
           value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
       </form>
     </div>

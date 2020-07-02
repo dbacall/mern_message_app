@@ -17,5 +17,10 @@ describe('AddPost component:', () => {
     expect(wrapper.find('.input').prop('value')).toBe('');
   });
 
-  test('user can add text to the message input', () => {});
+  test('user can add text to the message input', () => {
+    wrapper.find('.input').simulate('change', {
+      target: { value: 'New message' },
+    });
+    expect(wrapper.find('.input').prop('value')).toBe('New message');
+  });
 });
