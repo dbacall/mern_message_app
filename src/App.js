@@ -7,9 +7,13 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Link to="/" class="home-btn">
+          Home
+        </Link>
         <Link to="/add" class="add-post-btn">
           Add Post
         </Link>
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/add" component={AddPost} />
